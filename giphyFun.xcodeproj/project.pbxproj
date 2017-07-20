@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55517D34BD2093666B9A322D /* Pods_giphyFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE501E154A42C6CBD7690786 /* Pods_giphyFun.framework */; };
+		F9873CFB1F211A640087935E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873CFA1F211A640087935E /* AppDelegate.swift */; };
+		F9873D001F211A640087935E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9873CFE1F211A640087935E /* Main.storyboard */; };
+		F9873D021F211A640087935E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9873D011F211A640087935E /* Assets.xcassets */; };
+		F9873D051F211A640087935E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9873D031F211A640087935E /* LaunchScreen.storyboard */; };
+		F9873D0D1F211C5D0087935E /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D0C1F211C5D0087935E /* CreateUsernameViewController.swift */; };
+		F9873D0F1F211D980087935E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D0E1F211D980087935E /* LoginViewController.swift */; };
+		F9873D151F2121010087935E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9873D141F2121010087935E /* Login.storyboard */; };
+		F9873D171F21219B0087935E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D161F21219B0087935E /* User.swift */; };
+		F9873D191F2121CC0087935E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D181F2121CC0087935E /* UserService.swift */; };
+		F9873D1B1F2122CC0087935E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9873D1A1F2122CB0087935E /* GoogleService-Info.plist */; };
+		F9873D1D1F2125430087935E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D1C1F2125430087935E /* Constants.swift */; };
+		F9873D1F1F2127000087935E /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D1E1F2127000087935E /* Storyboard+Utility.swift */; };
+		F9873D271F2128D90087935E /* DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D261F2128D90087935E /* DatabaseReference+Location.swift */; };
+		F9873D2C1F2131210087935E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2B1F2131210087935E /* ViewController.swift */; };
+		F9873D2E1F2132FF0087935E /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2D1F2132FF0087935E /* Gif.swift */; };
+		F9873D301F2133110087935E /* GifService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2F1F2133110087935E /* GifService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F9B97ECA4FCA4ED44090697 /* Pods-giphyFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphyFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giphyFun/Pods-giphyFun.debug.xcconfig"; sourceTree = "<group>"; };
+		6A553118CF5DF94579921154 /* Pods-giphyFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphyFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-giphyFun/Pods-giphyFun.release.xcconfig"; sourceTree = "<group>"; };
+		EE501E154A42C6CBD7690786 /* Pods_giphyFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giphyFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9873CF71F211A640087935E /* giphyFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphyFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9873CFA1F211A640087935E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9873CFF1F211A640087935E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9873D011F211A640087935E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9873D041F211A640087935E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9873D061F211A640087935E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9873D0C1F211C5D0087935E /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		F9873D0E1F211D980087935E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F9873D141F2121010087935E /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F9873D161F21219B0087935E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
+		F9873D181F2121CC0087935E /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		F9873D1A1F2122CB0087935E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9873D1C1F2125430087935E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F9873D1E1F2127000087935E /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		F9873D261F2128D90087935E /* DatabaseReference+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseReference+Location.swift"; sourceTree = "<group>"; };
+		F9873D2B1F2131210087935E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9873D2D1F2132FF0087935E /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		F9873D2F1F2133110087935E /* GifService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9873CF41F211A640087935E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55517D34BD2093666B9A322D /* Pods_giphyFun.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1EAA99F37A680F6A889A849 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE501E154A42C6CBD7690786 /* Pods_giphyFun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3894DA8271CD76A5204067 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F9B97ECA4FCA4ED44090697 /* Pods-giphyFun.debug.xcconfig */,
+				6A553118CF5DF94579921154 /* Pods-giphyFun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9873CEE1F211A640087935E = {
+			isa = PBXGroup;
+			children = (
+				F9873CF91F211A640087935E /* giphyFun */,
+				F9873CF81F211A640087935E /* Products */,
+				CE3894DA8271CD76A5204067 /* Pods */,
+				A1EAA99F37A680F6A889A849 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9873CF81F211A640087935E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9873CF71F211A640087935E /* giphyFun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9873CF91F211A640087935E /* giphyFun */ = {
+			isa = PBXGroup;
+			children = (
+				F9873D061F211A640087935E /* Info.plist */,
+				F9873D1A1F2122CB0087935E /* GoogleService-Info.plist */,
+				F9873CFA1F211A640087935E /* AppDelegate.swift */,
+				F9873D011F211A640087935E /* Assets.xcassets */,
+				F9873D2A1F212E2E0087935E /* Helpers */,
+				F9873D251F2127FD0087935E /* Storyboards */,
+				F9873D201F21275A0087935E /* Controllers */,
+				F9873D211F2127760087935E /* Extensions */,
+				F9873D241F2127A40087935E /* Supporting Files */,
+				F9873D231F2127980087935E /* Models */,
+				F9873D221F21278F0087935E /* Services */,
+			);
+			path = giphyFun;
+			sourceTree = "<group>";
+		};
+		F9873D201F21275A0087935E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9873D0C1F211C5D0087935E /* CreateUsernameViewController.swift */,
+				F9873D0E1F211D980087935E /* LoginViewController.swift */,
+				F9873D2B1F2131210087935E /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F9873D211F2127760087935E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9873D261F2128D90087935E /* DatabaseReference+Location.swift */,
+				F9873D1E1F2127000087935E /* Storyboard+Utility.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F9873D221F21278F0087935E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F9873D181F2121CC0087935E /* UserService.swift */,
+				F9873D2F1F2133110087935E /* GifService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F9873D231F2127980087935E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9873D161F21219B0087935E /* User.swift */,
+				F9873D2D1F2132FF0087935E /* Gif.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F9873D241F2127A40087935E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9873D1C1F2125430087935E /* Constants.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9873D251F2127FD0087935E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F9873CFE1F211A640087935E /* Main.storyboard */,
+				F9873D031F211A640087935E /* LaunchScreen.storyboard */,
+				F9873D141F2121010087935E /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F9873D2A1F212E2E0087935E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9873CF61F211A640087935E /* giphyFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9873D091F211A640087935E /* Build configuration list for PBXNativeTarget "giphyFun" */;
+			buildPhases = (
+				C540AC3034B754E296EE2B3E /* [CP] Check Pods Manifest.lock */,
+				F9873CF31F211A640087935E /* Sources */,
+				F9873CF41F211A640087935E /* Frameworks */,
+				F9873CF51F211A640087935E /* Resources */,
+				F5433492C0F3BB0AF12730A1 /* [CP] Embed Pods Frameworks */,
+				48BE92ACEC860FD95A3EA9D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = giphyFun;
+			productName = giphyFun;
+			productReference = F9873CF71F211A640087935E /* giphyFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9873CEF1F211A640087935E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sky Xu";
+				TargetAttributes = {
+					F9873CF61F211A640087935E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2CL75PM5U8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F9873CF21F211A640087935E /* Build configuration list for PBXProject "giphyFun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9873CEE1F211A640087935E;
+			productRefGroup = F9873CF81F211A640087935E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9873CF61F211A640087935E /* giphyFun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9873CF51F211A640087935E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9873D151F2121010087935E /* Login.storyboard in Resources */,
+				F9873D051F211A640087935E /* LaunchScreen.storyboard in Resources */,
+				F9873D1B1F2122CC0087935E /* GoogleService-Info.plist in Resources */,
+				F9873D021F211A640087935E /* Assets.xcassets in Resources */,
+				F9873D001F211A640087935E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48BE92ACEC860FD95A3EA9D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-giphyFun/Pods-giphyFun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C540AC3034B754E296EE2B3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5433492C0F3BB0AF12730A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-giphyFun/Pods-giphyFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9873CF31F211A640087935E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9873D191F2121CC0087935E /* UserService.swift in Sources */,
+				F9873D0F1F211D980087935E /* LoginViewController.swift in Sources */,
+				F9873D271F2128D90087935E /* DatabaseReference+Location.swift in Sources */,
+				F9873D2C1F2131210087935E /* ViewController.swift in Sources */,
+				F9873D2E1F2132FF0087935E /* Gif.swift in Sources */,
+				F9873D171F21219B0087935E /* User.swift in Sources */,
+				F9873CFB1F211A640087935E /* AppDelegate.swift in Sources */,
+				F9873D1F1F2127000087935E /* Storyboard+Utility.swift in Sources */,
+				F9873D0D1F211C5D0087935E /* CreateUsernameViewController.swift in Sources */,
+				F9873D1D1F2125430087935E /* Constants.swift in Sources */,
+				F9873D301F2133110087935E /* GifService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9873CFE1F211A640087935E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9873CFF1F211A640087935E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9873D031F211A640087935E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9873D041F211A640087935E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9873D071F211A640087935E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9873D081F211A640087935E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9873D0A1F211A640087935E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F9B97ECA4FCA4ED44090697 /* Pods-giphyFun.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2CL75PM5U8;
+				INFOPLIST_FILE = giphyFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.giphyFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F9873D0B1F211A640087935E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A553118CF5DF94579921154 /* Pods-giphyFun.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2CL75PM5U8;
+				INFOPLIST_FILE = giphyFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.giphyFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9873CF21F211A640087935E /* Build configuration list for PBXProject "giphyFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9873D071F211A640087935E /* Debug */,
+				F9873D081F211A640087935E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9873D091F211A640087935E /* Build configuration list for PBXNativeTarget "giphyFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9873D0A1F211A640087935E /* Debug */,
+				F9873D0B1F211A640087935E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9873CEF1F211A640087935E /* Project object */;
+}
