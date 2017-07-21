@@ -18,6 +18,10 @@ target 'giphyFun' do
   
   pod 'Kingfisher', '~> 3.0'
   pod 'Alamofire', '~> 4.4'
+  pod 'SwiftyJSON', :git => 'https://github.com/IBM-Swift/SwiftyJSON.git'
+  pod 'AlamofireImage', :git => 'https://github.com/Alamofire/AlamofireImage.git'
+  pod 'AlamofireNetworkActivityIndicator', :git => 'https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git'
+  pod 'SwiftGifOrigin'
 
 
 end

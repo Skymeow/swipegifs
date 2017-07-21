@@ -13,12 +13,12 @@ import FirebaseDatabase.FIRDataSnapshot
 
 class Gif: NSObject {
     
-    let imageURL: String
-    let imageHeight: CGFloat
+    let gifUrl: String
+    let gifHeight: CGFloat
     
-    init(imageURL: String, imageHeight: CGFloat) {
-        self.imageURL = imageURL
-        self.imageHeight = imageHeight
+    init(gifUrl: String, gifHeight: CGFloat) {
+        self.gifUrl = gifUrl
+        self.gifHeight = gifHeight
     }
 
 

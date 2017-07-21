@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 import FirebaseStorage
 import FirebaseDatabase
+import Alamofire
 
 struct GifService {
-   
+        
+    
+    
 }

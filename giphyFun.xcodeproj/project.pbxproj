@@ -24,6 +24,7 @@
 		F9873D2C1F2131210087935E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2B1F2131210087935E /* ViewController.swift */; };
 		F9873D2E1F2132FF0087935E /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2D1F2132FF0087935E /* Gif.swift */; };
 		F9873D301F2133110087935E /* GifService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2F1F2133110087935E /* GifService.swift */; };
+		F9873D321F2285350087935E /* Simongame.gif in Resources */ = {isa = PBXBuildFile; fileRef = F9873D311F2285350087935E /* Simongame.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F9873D2B1F2131210087935E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9873D2D1F2132FF0087935E /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		F9873D2F1F2133110087935E /* GifService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifService.swift; sourceTree = "<group>"; };
+		F9873D311F2285350087935E /* Simongame.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Simongame.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				F9873D061F211A640087935E /* Info.plist */,
 				F9873D1A1F2122CB0087935E /* GoogleService-Info.plist */,
+				F9873D311F2285350087935E /* Simongame.gif */,
 				F9873CFA1F211A640087935E /* AppDelegate.swift */,
 				F9873D011F211A640087935E /* Assets.xcassets */,
 				F9873D2A1F212E2E0087935E /* Helpers */,
@@ -245,6 +248,7 @@
 				F9873D1B1F2122CC0087935E /* GoogleService-Info.plist in Resources */,
 				F9873D021F211A640087935E /* Assets.xcassets in Resources */,
 				F9873D001F211A640087935E /* Main.storyboard in Resources */,
+				F9873D321F2285350087935E /* Simongame.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
