@@ -7,6 +7,7 @@
 //
 import Foundation
 import UIKit
+import Kingfisher
 import SwiftyJSON
 import SwiftGifOrigin
 import Alamofire
@@ -15,9 +16,12 @@ import AlamofireImage
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
+    //make  a property for url to be used in create service
+    var currentUrl:String?
     
     func wasDragged(gestureRecognizer: UIPanGestureRecognizer) {
         
+        print(currentUrl)
         let translation = gestureRecognizer.translation(in: view)
         
         let label = gestureRecognizer.view!
@@ -42,21 +46,24 @@ class ViewController: UIViewController {
             
             if label.center.x < 100 {
                 print("not chosen")
-                updateImage()
-                
+                acceptedOrRejected = "rejected"
             } else if label.center.x > self.view.bounds.width - 100 {
                 print("chosen")
-                updateImage()
-                // acceptedOrRejected = "accepted"
+                acceptedOrRejected = "accepted"
                 
             }
             
+            if acceptedOrRejected == "accepted" {
+                GifService.giveGifUrl(completion: self.update)
+                
+                GifService.create(forURLString: currentUrl!, aspectHeight: 320)
+                
+            } else if acceptedOrRejected == "rejected" {
+               GifService.giveGifUrl(completion: self.update)
+            }
             
             rotation = CGAffineTransform(rotationAngle: 0)
-            
             stretchAndRotation = rotation.scaledBy(x: 1, y: 1) // rotation.scaleBy(x: scale, y: scale) is now rotation.scaledBy(x: scale, y: scale)
-            
-            
             label.transform = stretchAndRotation
             
             label.center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height / 2)
@@ -66,36 +73,13 @@ class ViewController: UIViewController {
     }
     //end wasDragged function
     
-    
-    //start call random gif api
-    func updateImage() {
-        let apiString = "https://api.giphy.com/v1/gifs/random"
-        
-        let headers = ["api_key":"0e52cc9383e148cd84b0c1c1bbfd0705"]
-        
-        let request = Alamofire.request(apiString, method:.get, headers: headers).validate().responseJSON() { response in
-            
-            switch response.result {
-            case .success:
-                if let value = response.result.value {
-                    let json = JSON(value)
-                    let Data = json["data"]["image_url"]
-                    if var string = Data.rawString() {
-                        let gif = UIImage.gif(url: string)
-                        //self.imageView.af_setImage(withURL: URL(string: string)!)
-                       self.imageView.image = gif
-                    }
-                }
-                
-            case .failure(let error):
-                print(error)
-            }
-            
-        }
-        
+    func update(_ urlString: String?){
+        self.currentUrl = urlString
+        var gif = UIImage.gif(url: self.currentUrl!)
+        //self.imageView.af_setImage(withURL: URL(string: string)!)
+        self.imageView.image = gif
     }
 
-    //end calling api
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,8 +89,7 @@ class ViewController: UIViewController {
         
         imageView.addGestureRecognizer(gesture)
         
-        updateImage()
-        
+        GifService.giveGifUrl(completion: self.update)
         
     }
     

@@ -19,7 +19,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EasyPeasy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FirebaseUI-FirebaseAuthUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FoldingCell.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,7 +67,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0FD5FF1A590840430AD91E84DB9DF8E4</key>
+		<key>0307875E33E03F5AC2225F9571DB818A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,6 +92,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>673787F531C1EA53A764D398D68FCEBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
@@ -92,17 +107,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A63CDFD3178D8139E8B5C050BE10D305</key>
+		<key>B5221EA08C01208C608AC6ECB17B9F2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBAC07326903F242C60FD05840C39004</key>
+		<key>B626E472969D6F87698AF0041EAAFC38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC5FDF180E4A1DC1D0DF833395FDD877</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -22,9 +22,10 @@
 		F9873D1F1F2127000087935E /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D1E1F2127000087935E /* Storyboard+Utility.swift */; };
 		F9873D271F2128D90087935E /* DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D261F2128D90087935E /* DatabaseReference+Location.swift */; };
 		F9873D2C1F2131210087935E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2B1F2131210087935E /* ViewController.swift */; };
-		F9873D2E1F2132FF0087935E /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2D1F2132FF0087935E /* Gif.swift */; };
-		F9873D301F2133110087935E /* GifService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D2F1F2133110087935E /* GifService.swift */; };
 		F9873D321F2285350087935E /* Simongame.gif in Resources */ = {isa = PBXBuildFile; fileRef = F9873D311F2285350087935E /* Simongame.gif */; };
+		F9873D341F23909A0087935E /* GifService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D331F23909A0087935E /* GifService.swift */; };
+		F9873D361F2390AA0087935E /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D351F2390AA0087935E /* Gif.swift */; };
+		F9873D601F2660160087935E /* SavedGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D5F1F2660160087935E /* SavedGifViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +48,10 @@
 		F9873D1E1F2127000087935E /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		F9873D261F2128D90087935E /* DatabaseReference+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseReference+Location.swift"; sourceTree = "<group>"; };
 		F9873D2B1F2131210087935E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F9873D2D1F2132FF0087935E /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
-		F9873D2F1F2133110087935E /* GifService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifService.swift; sourceTree = "<group>"; };
 		F9873D311F2285350087935E /* Simongame.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Simongame.gif; sourceTree = "<group>"; };
+		F9873D331F23909A0087935E /* GifService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifService.swift; sourceTree = "<group>"; };
+		F9873D351F2390AA0087935E /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		F9873D5F1F2660160087935E /* SavedGifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedGifViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				F9873D241F2127A40087935E /* Supporting Files */,
 				F9873D231F2127980087935E /* Models */,
 				F9873D221F21278F0087935E /* Services */,
+				F9873D671F26813E0087935E /* Views */,
 			);
 			path = giphyFun;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 				F9873D0C1F211C5D0087935E /* CreateUsernameViewController.swift */,
 				F9873D0E1F211D980087935E /* LoginViewController.swift */,
 				F9873D2B1F2131210087935E /* ViewController.swift */,
+				F9873D5F1F2660160087935E /* SavedGifViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -141,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				F9873D181F2121CC0087935E /* UserService.swift */,
-				F9873D2F1F2133110087935E /* GifService.swift */,
+				F9873D331F23909A0087935E /* GifService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -150,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				F9873D161F21219B0087935E /* User.swift */,
-				F9873D2D1F2132FF0087935E /* Gif.swift */,
+				F9873D351F2390AA0087935E /* Gif.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -178,6 +182,13 @@
 			children = (
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F9873D671F26813E0087935E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,15 +320,16 @@
 			files = (
 				F9873D191F2121CC0087935E /* UserService.swift in Sources */,
 				F9873D0F1F211D980087935E /* LoginViewController.swift in Sources */,
+				F9873D341F23909A0087935E /* GifService.swift in Sources */,
 				F9873D271F2128D90087935E /* DatabaseReference+Location.swift in Sources */,
+				F9873D361F2390AA0087935E /* Gif.swift in Sources */,
 				F9873D2C1F2131210087935E /* ViewController.swift in Sources */,
-				F9873D2E1F2132FF0087935E /* Gif.swift in Sources */,
 				F9873D171F21219B0087935E /* User.swift in Sources */,
+				F9873D601F2660160087935E /* SavedGifViewController.swift in Sources */,
 				F9873CFB1F211A640087935E /* AppDelegate.swift in Sources */,
 				F9873D1F1F2127000087935E /* Storyboard+Utility.swift in Sources */,
 				F9873D0D1F211C5D0087935E /* CreateUsernameViewController.swift in Sources */,
 				F9873D1D1F2125430087935E /* Constants.swift in Sources */,
-				F9873D301F2133110087935E /* GifService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

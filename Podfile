@@ -22,6 +22,6 @@ target 'giphyFun' do
   pod 'AlamofireImage', :git => 'https://github.com/Alamofire/AlamofireImage.git'
   pod 'AlamofireNetworkActivityIndicator', :git => 'https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git'
   pod 'SwiftGifOrigin'
-
-
+  pod 'FoldingCell', '~> 2.0.3' 
+  pod "EasyPeasy"
 end

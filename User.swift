@@ -16,7 +16,7 @@ class User: NSObject {
     
     let uid: String
     let username: String
-  
+    
     
     // MARK: - Init
     
@@ -25,13 +25,12 @@ class User: NSObject {
         self.username = username
     }
 //    backup init , if  required init doesn't happen
-    init?(snapshot: DataSnapshot)   {
+    init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
         let username = dict["username"] as? String
             else { return nil }
         self.uid = snapshot.key
         self.username = username
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
