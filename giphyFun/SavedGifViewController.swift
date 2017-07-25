@@ -7,29 +7,49 @@
 //
 
 import UIKit
-
-class SavedGifViewController: UIViewController {
-
+import FirebaseDatabase
+class SavedGifViewController: UITableViewController {
+    
+    var user: User!
+    var gifs = [Gif]()
+    var savedGifRef: DatabaseReference?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        UserService.getGifs(for: User.current) { (gifs) in
+            self.gifs = gifs
+            print(gifs)
+            self.tableView.reloadData()
+        }
+        
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return gifs.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell", for: indexPath)
+        cell.backgroundColor = .red
+        
+        return cell
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
+
+//cause we are using tableview, instead of UIview, so we don't need this extension of datasource and delegate
+//extension SavedGifViewController: UITableViewDataSource
+
+
+
+
+
+
+
+
+

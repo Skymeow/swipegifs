@@ -26,10 +26,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="savedGif"/>
                                 <connections>
-                                    <segue destination="9qT-bf-4zf" kind="show" id="TUr-cM-E8S"/>
+                                    <action selector="savedGifButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RqW-92-emK"/>
+                                    <segue destination="9qT-bf-4zf" kind="show" id="zpm-m9-ElC"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="simongame1" translatesAutoresizingMaskIntoConstraints="NO" id="Zcz-Jt-9yP" customClass="gifImage">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zcz-Jt-9yP" customClass="gifImage">
                                 <rect key="frame" x="67" y="107" width="240" height="453"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -38,22 +39,23 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Zcz-Jt-9yP" id="wHq-4p-SLW"/>
+                        <outlet property="savedGifButton" destination="AO3-Da-ug1" id="8eD-Gg-QoC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
-        <!--Main Table View Coontroller-->
+        <!--Saved Gif View Controller-->
         <scene sceneID="gIH-jU-2oQ">
             <objects>
-                <tableViewController id="9qT-bf-4zf" customClass="MainTableViewCoontroller" sceneMemberID="viewController">
+                <tableViewController id="9qT-bf-4zf" customClass="SavedGifViewController" customModule="giphyFun" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="375" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mha-E1-qqJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="375" id="Dsg-Xw-MS8" userLabel="Cell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="Dsg-Xw-MS8">
                                 <rect key="frame" x="0.0" y="28" width="375" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dsg-Xw-MS8" id="4VQ-8D-SpQ">
@@ -97,7 +99,4 @@
             <point key="canvasLocation" x="853.60000000000002" y="37.331334332833585"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="simongame1" width="2248" height="1268"/>
-    </resources>
 </document>

@@ -15,6 +15,10 @@ import AlamofireImage
 
 class ViewController: UIViewController {
     
+    @IBAction func savedGifButtonTapped(_ sender: UIButton) {
+        
+    }
+    @IBOutlet weak var savedGifButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     //make  a property for url to be used in create service
     var currentUrl:String?

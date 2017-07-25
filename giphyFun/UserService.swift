@@ -34,5 +34,20 @@ struct UserService {
         })
     }
     
-       
+    // to fetch all thee posts belongs to a user
+    static func getGifs(for user: User, completion: @escaping ([Gif]) -> Void) {
+        let ref = Database.database().reference().child("gifs").child(user.uid)
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {
+                return completion([])
+            }
+            
+            
+            
+            
+            let gifs = snapshot.reversed().flatMap(Gif.init)
+            completion(gifs)
+            print(gifs)
+        })
+    }
 }
