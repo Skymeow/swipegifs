@@ -5,13 +5,24 @@
 //  Created by Sky Xu on 7/20/17.
 //  Copyright © 2017 Sky Xu. All rights reserved.
 //
-
+import FirebaseAuthUI
 import UIKit
 import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    //it'll handle redirecting data and control back to our app after a user has logged into Facebook.
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
+        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+            return true
+        }
+        
+        // other URL handling goes here
+        
+        return false
+    }
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?)
         -> Bool {
