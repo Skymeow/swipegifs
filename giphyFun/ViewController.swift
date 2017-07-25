@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var savedGifButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     //make  a property for url to be used in create service
-    var currentUrl:String?
+    var currentUrl: String?
     
     func wasDragged(gestureRecognizer: UIPanGestureRecognizer) {
         

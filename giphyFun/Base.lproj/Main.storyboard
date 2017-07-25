@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,42 +51,32 @@
         <scene sceneID="gIH-jU-2oQ">
             <objects>
                 <tableViewController id="9qT-bf-4zf" customClass="SavedGifViewController" customModule="giphyFun" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="375" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mha-E1-qqJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="288" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mha-E1-qqJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="Dsg-Xw-MS8">
-                                <rect key="frame" x="0.0" y="28" width="375" height="375"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="320" id="Dsg-Xw-MS8" customClass="PostImageCell" customModule="giphyFun" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dsg-Xw-MS8" id="4VQ-8D-SpQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="319.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqS-tj-7ei" userLabel="containerView" customClass="ContainerView">
-                                            <rect key="frame" x="8" y="180" width="359" height="456"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="456" id="tkg-bL-Nar"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3C-AU-NEO" userLabel="foregroundView" customClass="ForegroudView">
-                                            <rect key="frame" x="8" y="8" width="359" height="75"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="75" id="PzO-EO-vSd"/>
-                                            </constraints>
-                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NRm-dj-REK" userLabel="Post Image View">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="321.5"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Z3C-AU-NEO" firstAttribute="top" secondItem="4VQ-8D-SpQ" secondAttribute="top" constant="8" identifier="foregroundViewTop" id="DrI-j4-TGf"/>
-                                        <constraint firstAttribute="trailing" secondItem="Z3C-AU-NEO" secondAttribute="trailing" constant="8" id="H65-h6-FQE"/>
-                                        <constraint firstAttribute="trailing" secondItem="uqS-tj-7ei" secondAttribute="trailing" constant="8" id="J1L-D4-Gfs"/>
-                                        <constraint firstItem="Z3C-AU-NEO" firstAttribute="leading" secondItem="4VQ-8D-SpQ" secondAttribute="leading" constant="8" id="lai-SJ-eWT"/>
-                                        <constraint firstItem="uqS-tj-7ei" firstAttribute="leading" secondItem="4VQ-8D-SpQ" secondAttribute="leading" constant="8" id="s7S-xu-vk8"/>
-                                        <constraint firstItem="uqS-tj-7ei" firstAttribute="top" secondItem="Z3C-AU-NEO" secondAttribute="bottom" constant="97" identifier="containerViewTop" id="x8L-OL-Bfw"/>
+                                        <constraint firstAttribute="trailing" secondItem="NRm-dj-REK" secondAttribute="trailing" id="2PZ-p1-zGt"/>
+                                        <constraint firstItem="NRm-dj-REK" firstAttribute="leading" secondItem="4VQ-8D-SpQ" secondAttribute="leading" id="5Hx-me-IyO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="NRm-dj-REK" secondAttribute="bottom" constant="-10" id="9ic-QO-269"/>
+                                        <constraint firstItem="NRm-dj-REK" firstAttribute="top" secondItem="4VQ-8D-SpQ" secondAttribute="top" id="Rjs-Wp-kHB"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myImageView" destination="NRm-dj-REK" id="0w5-Ev-8n2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

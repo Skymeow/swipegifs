@@ -26,6 +26,7 @@
 		F9873D341F23909A0087935E /* GifService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D331F23909A0087935E /* GifService.swift */; };
 		F9873D361F2390AA0087935E /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D351F2390AA0087935E /* Gif.swift */; };
 		F9873D601F2660160087935E /* SavedGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D5F1F2660160087935E /* SavedGifViewController.swift */; };
+		F9873D6D1F279BA10087935E /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D6C1F279BA10087935E /* PostImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		F9873D331F23909A0087935E /* GifService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifService.swift; sourceTree = "<group>"; };
 		F9873D351F2390AA0087935E /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		F9873D5F1F2660160087935E /* SavedGifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedGifViewController.swift; sourceTree = "<group>"; };
+		F9873D6C1F279BA10087935E /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		F9873D671F26813E0087935E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F9873D6C1F279BA10087935E /* PostImageCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				F9873D191F2121CC0087935E /* UserService.swift in Sources */,
 				F9873D0F1F211D980087935E /* LoginViewController.swift in Sources */,
 				F9873D341F23909A0087935E /* GifService.swift in Sources */,
+				F9873D6D1F279BA10087935E /* PostImageCell.swift in Sources */,
 				F9873D271F2128D90087935E /* DatabaseReference+Location.swift in Sources */,
 				F9873D361F2390AA0087935E /* Gif.swift in Sources */,
 				F9873D2C1F2131210087935E /* ViewController.swift in Sources */,
