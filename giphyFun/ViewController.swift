@@ -106,6 +106,35 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //for print fonts
+        
+        for family: String in UIFont.familyNames
+            
+        {
+            
+            print("\(family)")
+            
+            for names: String in UIFont.fontNames(forFamilyName: family)
+                
+            {
+                
+                print("== \(names)")
+                
+            }
+            
+        }
+        let rect = CGRect(origin: CGPoint(x: 10,y: 10), size: CGSize(width: 400, height: 100))
+
+        let label: UILabel = UILabel(frame: rect)
+        label.textAlignment = NSTextAlignment.center
+        label.text = "Everybody loves gifs!"
+        label.font = UIFont(name: "gloriahallelujah", size: 35)
+        label.backgroundColor = UIColor.white
+        self.view.addSubview(label)
+        
+        view.backgroundColor = UIColor.gray
+        //end of calling fonts
+        
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(self.wasDragged(gestureRecognizer:)))
         
         imageView.isUserInteractionEnabled = true

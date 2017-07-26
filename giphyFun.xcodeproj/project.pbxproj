@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		55517D34BD2093666B9A322D /* Pods_giphyFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE501E154A42C6CBD7690786 /* Pods_giphyFun.framework */; };
+		F917D5161F283633002FDA6F /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F917D5151F283633002FDA6F /* Quicksand-Regular.ttf */; };
+		F917D5181F2837DC002FDA6F /* gloriahallelujah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F917D5171F2837DC002FDA6F /* gloriahallelujah.ttf */; };
 		F9873CFB1F211A640087935E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873CFA1F211A640087935E /* AppDelegate.swift */; };
 		F9873D001F211A640087935E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9873CFE1F211A640087935E /* Main.storyboard */; };
 		F9873D021F211A640087935E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9873D011F211A640087935E /* Assets.xcassets */; };
@@ -28,12 +30,24 @@
 		F9873D601F2660160087935E /* SavedGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D5F1F2660160087935E /* SavedGifViewController.swift */; };
 		F9873D6D1F279BA10087935E /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D6C1F279BA10087935E /* PostImageCell.swift */; };
 		F9873D6F1F281DC80087935E /* bartlaf3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9873D6E1F281DC80087935E /* bartlaf3.mp3 */; };
+		F9873D7A1F2829570087935E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D701F2829570087935E /* OpenSans-Bold.ttf */; };
+		F9873D7B1F2829570087935E /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D711F2829570087935E /* OpenSans-BoldItalic.ttf */; };
+		F9873D7C1F2829570087935E /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D721F2829570087935E /* OpenSans-ExtraBold.ttf */; };
+		F9873D7D1F2829570087935E /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D731F2829570087935E /* OpenSans-ExtraBoldItalic.ttf */; };
+		F9873D7E1F2829570087935E /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D741F2829570087935E /* OpenSans-Italic.ttf */; };
+		F9873D7F1F2829570087935E /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D751F2829570087935E /* OpenSans-Light.ttf */; };
+		F9873D801F2829570087935E /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D761F2829570087935E /* OpenSans-LightItalic.ttf */; };
+		F9873D811F2829570087935E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D771F2829570087935E /* OpenSans-Regular.ttf */; };
+		F9873D821F2829570087935E /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D781F2829570087935E /* OpenSans-Semibold.ttf */; };
+		F9873D831F2829570087935E /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9873D791F2829570087935E /* OpenSans-SemiboldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F9B97ECA4FCA4ED44090697 /* Pods-giphyFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphyFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giphyFun/Pods-giphyFun.debug.xcconfig"; sourceTree = "<group>"; };
 		6A553118CF5DF94579921154 /* Pods-giphyFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giphyFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-giphyFun/Pods-giphyFun.release.xcconfig"; sourceTree = "<group>"; };
 		EE501E154A42C6CBD7690786 /* Pods_giphyFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giphyFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F917D5151F283633002FDA6F /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		F917D5171F2837DC002FDA6F /* gloriahallelujah.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gloriahallelujah.ttf; sourceTree = "<group>"; };
 		F9873CF71F211A640087935E /* giphyFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphyFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9873CFA1F211A640087935E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9873CFF1F211A640087935E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +70,16 @@
 		F9873D5F1F2660160087935E /* SavedGifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedGifViewController.swift; sourceTree = "<group>"; };
 		F9873D6C1F279BA10087935E /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		F9873D6E1F281DC80087935E /* bartlaf3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bartlaf3.mp3; sourceTree = "<group>"; };
+		F9873D701F2829570087935E /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F9873D711F2829570087935E /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F9873D721F2829570087935E /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F9873D731F2829570087935E /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F9873D741F2829570087935E /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		F9873D751F2829570087935E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		F9873D761F2829570087935E /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F9873D771F2829570087935E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F9873D781F2829570087935E /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		F9873D791F2829570087935E /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +132,7 @@
 		F9873CF91F211A640087935E /* giphyFun */ = {
 			isa = PBXGroup;
 			children = (
-				F9873D6E1F281DC80087935E /* bartlaf3.mp3 */,
+				F9873D841F28297C0087935E /* Resources */,
 				F9873D061F211A640087935E /* Info.plist */,
 				F9873D1A1F2122CB0087935E /* GoogleService-Info.plist */,
 				F9873D311F2285350087935E /* Simongame.gif */,
@@ -197,6 +221,26 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		F9873D841F28297C0087935E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F917D5151F283633002FDA6F /* Quicksand-Regular.ttf */,
+				F9873D701F2829570087935E /* OpenSans-Bold.ttf */,
+				F917D5171F2837DC002FDA6F /* gloriahallelujah.ttf */,
+				F9873D711F2829570087935E /* OpenSans-BoldItalic.ttf */,
+				F9873D721F2829570087935E /* OpenSans-ExtraBold.ttf */,
+				F9873D731F2829570087935E /* OpenSans-ExtraBoldItalic.ttf */,
+				F9873D741F2829570087935E /* OpenSans-Italic.ttf */,
+				F9873D751F2829570087935E /* OpenSans-Light.ttf */,
+				F9873D761F2829570087935E /* OpenSans-LightItalic.ttf */,
+				F9873D771F2829570087935E /* OpenSans-Regular.ttf */,
+				F9873D781F2829570087935E /* OpenSans-Semibold.ttf */,
+				F9873D791F2829570087935E /* OpenSans-SemiboldItalic.ttf */,
+				F9873D6E1F281DC80087935E /* bartlaf3.mp3 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,13 +304,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9873D7F1F2829570087935E /* OpenSans-Light.ttf in Resources */,
 				F9873D151F2121010087935E /* Login.storyboard in Resources */,
+				F9873D801F2829570087935E /* OpenSans-LightItalic.ttf in Resources */,
 				F9873D051F211A640087935E /* LaunchScreen.storyboard in Resources */,
+				F9873D821F2829570087935E /* OpenSans-Semibold.ttf in Resources */,
+				F9873D831F2829570087935E /* OpenSans-SemiboldItalic.ttf in Resources */,
+				F917D5181F2837DC002FDA6F /* gloriahallelujah.ttf in Resources */,
+				F9873D7A1F2829570087935E /* OpenSans-Bold.ttf in Resources */,
+				F917D5161F283633002FDA6F /* Quicksand-Regular.ttf in Resources */,
 				F9873D6F1F281DC80087935E /* bartlaf3.mp3 in Resources */,
 				F9873D1B1F2122CC0087935E /* GoogleService-Info.plist in Resources */,
 				F9873D021F211A640087935E /* Assets.xcassets in Resources */,
+				F9873D7B1F2829570087935E /* OpenSans-BoldItalic.ttf in Resources */,
 				F9873D001F211A640087935E /* Main.storyboard in Resources */,
+				F9873D811F2829570087935E /* OpenSans-Regular.ttf in Resources */,
 				F9873D321F2285350087935E /* Simongame.gif in Resources */,
+				F9873D7E1F2829570087935E /* OpenSans-Italic.ttf in Resources */,
+				F9873D7D1F2829570087935E /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				F9873D7C1F2829570087935E /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
