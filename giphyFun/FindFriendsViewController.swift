@@ -49,6 +49,7 @@ extension FindFriendsViewController: UITableViewDataSource {
     func configure(cell: FindFriendsCell, atIndexPath indexPath: IndexPath) {
         let user = users[indexPath.row]
         cell.usernameLabel.text = user.username
+        //isFollowed is false at first
         cell.followButton.isSelected = user.isFollowed
     }
 }

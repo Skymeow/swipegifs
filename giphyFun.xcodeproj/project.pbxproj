@@ -13,6 +13,9 @@
 		F917D51A1F283CB8002FDA6F /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5191F283CB8002FDA6F /* FollowService.swift */; };
 		F917D51C1F283F7F002FDA6F /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D51B1F283F7F002FDA6F /* FindFriendsViewController.swift */; };
 		F917D5201F2844C0002FDA6F /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D51F1F2844C0002FDA6F /* FindFriendsCell.swift */; };
+		F917D5221F290242002FDA6F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5211F290242002FDA6F /* Chat.swift */; };
+		F917D5241F290629002FDA6F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5231F290629002FDA6F /* Message.swift */; };
+		F917D5261F291B4B002FDA6F /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5251F291B4B002FDA6F /* ChatService.swift */; };
 		F9873CFB1F211A640087935E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873CFA1F211A640087935E /* AppDelegate.swift */; };
 		F9873D001F211A640087935E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9873CFE1F211A640087935E /* Main.storyboard */; };
 		F9873D021F211A640087935E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9873D011F211A640087935E /* Assets.xcassets */; };
@@ -54,6 +57,9 @@
 		F917D5191F283CB8002FDA6F /* FollowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowService.swift; sourceTree = "<group>"; };
 		F917D51B1F283F7F002FDA6F /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		F917D51F1F2844C0002FDA6F /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
+		F917D5211F290242002FDA6F /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		F917D5231F290629002FDA6F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F917D5251F291B4B002FDA6F /* ChatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		F9873CF71F211A640087935E /* giphyFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphyFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9873CFA1F211A640087935E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9873CFF1F211A640087935E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 				F9873D181F2121CC0087935E /* UserService.swift */,
 				F9873D331F23909A0087935E /* GifService.swift */,
 				F917D5191F283CB8002FDA6F /* FollowService.swift */,
+				F917D5251F291B4B002FDA6F /* ChatService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -193,6 +200,8 @@
 			children = (
 				F9873D161F21219B0087935E /* User.swift */,
 				F9873D351F2390AA0087935E /* Gif.swift */,
+				F917D5211F290242002FDA6F /* Chat.swift */,
+				F917D5231F290629002FDA6F /* Message.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -392,8 +401,11 @@
 			files = (
 				F917D51A1F283CB8002FDA6F /* FollowService.swift in Sources */,
 				F9873D191F2121CC0087935E /* UserService.swift in Sources */,
+				F917D5221F290242002FDA6F /* Chat.swift in Sources */,
+				F917D5241F290629002FDA6F /* Message.swift in Sources */,
 				F9873D0F1F211D980087935E /* LoginViewController.swift in Sources */,
 				F9873D341F23909A0087935E /* GifService.swift in Sources */,
+				F917D5261F291B4B002FDA6F /* ChatService.swift in Sources */,
 				F9873D6D1F279BA10087935E /* PostImageCell.swift in Sources */,
 				F917D51C1F283F7F002FDA6F /* FindFriendsViewController.swift in Sources */,
 				F9873D271F2128D90087935E /* DatabaseReference+Location.swift in Sources */,
