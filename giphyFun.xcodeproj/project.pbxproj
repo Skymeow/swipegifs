@@ -27,6 +27,7 @@
 		F9873D361F2390AA0087935E /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D351F2390AA0087935E /* Gif.swift */; };
 		F9873D601F2660160087935E /* SavedGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D5F1F2660160087935E /* SavedGifViewController.swift */; };
 		F9873D6D1F279BA10087935E /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873D6C1F279BA10087935E /* PostImageCell.swift */; };
+		F9873D6F1F281DC80087935E /* bartlaf3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9873D6E1F281DC80087935E /* bartlaf3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F9873D351F2390AA0087935E /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		F9873D5F1F2660160087935E /* SavedGifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedGifViewController.swift; sourceTree = "<group>"; };
 		F9873D6C1F279BA10087935E /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		F9873D6E1F281DC80087935E /* bartlaf3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bartlaf3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		F9873CF91F211A640087935E /* giphyFun */ = {
 			isa = PBXGroup;
 			children = (
+				F9873D6E1F281DC80087935E /* bartlaf3.mp3 */,
 				F9873D061F211A640087935E /* Info.plist */,
 				F9873D1A1F2122CB0087935E /* GoogleService-Info.plist */,
 				F9873D311F2285350087935E /* Simongame.gif */,
@@ -259,6 +262,7 @@
 			files = (
 				F9873D151F2121010087935E /* Login.storyboard in Resources */,
 				F9873D051F211A640087935E /* LaunchScreen.storyboard in Resources */,
+				F9873D6F1F281DC80087935E /* bartlaf3.mp3 in Resources */,
 				F9873D1B1F2122CC0087935E /* GoogleService-Info.plist in Resources */,
 				F9873D021F211A640087935E /* Assets.xcassets in Resources */,
 				F9873D001F211A640087935E /* Main.storyboard in Resources */,

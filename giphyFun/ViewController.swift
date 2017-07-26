@@ -12,8 +12,10 @@ import SwiftyJSON
 import SwiftGifOrigin
 import Alamofire
 import AlamofireImage
+import AVFoundation
 
 class ViewController: UIViewController {
+  
     
     @IBAction func savedGifButtonTapped(_ sender: UIButton) {
         
@@ -22,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     //make  a property for url to be used in create service
     var currentUrl: String?
-    
+    var myAudioPlayer = AVAudioPlayer()
     func wasDragged(gestureRecognizer: UIPanGestureRecognizer) {
         
         print(currentUrl)
@@ -61,6 +63,7 @@ class ViewController: UIViewController {
                 GifService.giveGifUrl(completion: self.update)
                 
                 GifService.create(forURLString: currentUrl!, aspectHeight: 320)
+                playAudio()
                 
             } else if acceptedOrRejected == "rejected" {
                GifService.giveGifUrl(completion: self.update)
@@ -84,7 +87,23 @@ class ViewController: UIViewController {
         self.imageView.image = gif
     }
 
-    
+    func playAudio() {
+        let myFilePathString = Bundle.main.path(forResource: "bartlaf3",ofType:"mp3")
+        if let myFilePathString = myFilePathString
+        {
+            let myFilePathURL = NSURL(fileURLWithPath: myFilePathString)
+            do{
+                try myAudioPlayer = AVAudioPlayer(contentsOf: myFilePathURL as URL)
+                myAudioPlayer.play()
+            }catch
+            {
+                print("error")
+            }
+            
+        }
+        
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(self.wasDragged(gestureRecognizer:)))
@@ -94,7 +113,6 @@ class ViewController: UIViewController {
         imageView.addGestureRecognizer(gesture)
         
         GifService.giveGifUrl(completion: self.update)
-        
     }
     
     override func didReceiveMemoryWarning() {
