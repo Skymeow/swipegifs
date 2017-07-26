@@ -10,6 +10,84 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Find Friends View Controller-->
+        <scene sceneID="do3-iL-mwV">
+            <objects>
+                <viewController id="2O2-9M-0vV" customClass="FindFriendsViewController" customModule="giphyFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PEo-mi-Qco"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Eh-cB-JZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cXo-TG-EGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Orm-C3-vtK">
+                                <rect key="frame" x="20" y="20" width="335" height="627"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FindFriendsCell" rowHeight="71" id="iDG-IT-6Cd" customClass="FindFriendsCell" customModule="giphyFun" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iDG-IT-6Cd" id="wFw-SJ-Jus">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="70.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-Lf-mTh">
+                                                    <rect key="frame" x="15" y="20" width="180" height="30.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhU-Cv-nDX">
+                                                    <rect key="frame" x="210" y="20" width="115" height="30.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="115" id="lXT-VA-pY7"/>
+                                                    </constraints>
+                                                    <state key="normal" title="follow"/>
+                                                    <connections>
+                                                        <action selector="followButtonTapped:" destination="iDG-IT-6Cd" eventType="touchUpInside" id="pdY-mz-U2q"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AhU-Cv-nDX" firstAttribute="top" secondItem="wFw-SJ-Jus" secondAttribute="top" constant="20" symbolic="YES" id="1Ik-EQ-eK9"/>
+                                                <constraint firstItem="bf2-Lf-mTh" firstAttribute="top" secondItem="wFw-SJ-Jus" secondAttribute="top" constant="20" symbolic="YES" id="Etc-iB-XAT"/>
+                                                <constraint firstItem="AhU-Cv-nDX" firstAttribute="leading" secondItem="bf2-Lf-mTh" secondAttribute="trailing" constant="15" id="Kwc-CC-xbD"/>
+                                                <constraint firstAttribute="bottom" secondItem="bf2-Lf-mTh" secondAttribute="bottom" constant="20" symbolic="YES" id="Wab-4v-dIT"/>
+                                                <constraint firstAttribute="trailing" secondItem="AhU-Cv-nDX" secondAttribute="trailing" constant="10" id="dVV-5f-hfq"/>
+                                                <constraint firstItem="bf2-Lf-mTh" firstAttribute="leading" secondItem="wFw-SJ-Jus" secondAttribute="leading" constant="15" id="ske-j0-CtW"/>
+                                                <constraint firstAttribute="bottom" secondItem="AhU-Cv-nDX" secondAttribute="bottom" constant="20" symbolic="YES" id="zdt-rQ-JXn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="followButton" destination="AhU-Cv-nDX" id="xeE-ML-a90"/>
+                                            <outlet property="usernameLabel" destination="bf2-Lf-mTh" id="GZP-Z5-00S"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2O2-9M-0vV" id="xjv-O4-sPO"/>
+                                    <outlet property="delegate" destination="2O2-9M-0vV" id="HSO-hT-YXO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Orm-C3-vtK" firstAttribute="leading" secondItem="cXo-TG-EGg" secondAttribute="leading" constant="20" symbolic="YES" id="6Zd-J7-Hkc"/>
+                            <constraint firstItem="8Eh-cB-JZb" firstAttribute="top" secondItem="Orm-C3-vtK" secondAttribute="bottom" constant="8" symbolic="YES" id="M8G-fu-izp"/>
+                            <constraint firstItem="Orm-C3-vtK" firstAttribute="top" secondItem="cXo-TG-EGg" secondAttribute="top" constant="20" symbolic="YES" id="myO-tG-xYD"/>
+                            <constraint firstAttribute="trailing" secondItem="Orm-C3-vtK" secondAttribute="trailing" constant="20" symbolic="YES" id="ro7-Ec-BUg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Orm-C3-vtK" id="sxr-Sf-2uI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiz-8G-NXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1004" y="-733.5832083958021"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -35,6 +113,14 @@
                                 <rect key="frame" x="67" y="107" width="240" height="453"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBm-0l-G4A" userLabel="find friends">
+                                <rect key="frame" x="16" y="78" width="46" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="find friends"/>
+                                <connections>
+                                    <segue destination="2O2-9M-0vV" kind="show" id="NAl-qs-Ei9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

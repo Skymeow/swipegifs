@@ -42,12 +42,40 @@ struct UserService {
                 return completion([])
             }
             
-            
-            
-            
             let gifs = snapshot.reversed().flatMap(Gif.init)
             completion(gifs)
             print(gifs)
         })
     }
+    
+    static func usersExcludingCurrentUser(completion: @escaping ([User]) -> Void) {
+        let currentUser = User.current
+        let ref = Database.database().reference().child("users")
+        
+        // convert all children snapshot into user using failable initializer
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot]
+                else { return completion([]) }
+            
+            let users =
+                snapshot
+                    .flatMap(User.init)
+                    .filter { $0.uid != currentUser.uid }
+            
+            // the dispatchGroup will notify us when all aysnc tasks are finished
+            let dispatchGroup = DispatchGroup()
+            users.forEach { (user) in
+                dispatchGroup.enter()
+                
+                FollowService.isUserFollowed(user) { (isFollowed) in
+                    user.isFollowed = isFollowed
+                    dispatchGroup.leave()
+                }
+            }
+            dispatchGroup.notify(queue: .main, execute: {
+                completion(users)
+            })
+        })
+    }
+    
 }
