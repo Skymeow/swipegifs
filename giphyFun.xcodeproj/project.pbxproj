@@ -16,6 +16,9 @@
 		F917D5221F290242002FDA6F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5211F290242002FDA6F /* Chat.swift */; };
 		F917D5241F290629002FDA6F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5231F290629002FDA6F /* Message.swift */; };
 		F917D5261F291B4B002FDA6F /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5251F291B4B002FDA6F /* ChatService.swift */; };
+		F917D52C1F293F81002FDA6F /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F917D52A1F293F81002FDA6F /* Chat.storyboard */; };
+		F917D5301F294AC6002FDA6F /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D52F1F294AC6002FDA6F /* ChatListViewController.swift */; };
+		F917D5321F2A2812002FDA6F /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5311F2A2812002FDA6F /* ChatListCell.swift */; };
 		F9873CFB1F211A640087935E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873CFA1F211A640087935E /* AppDelegate.swift */; };
 		F9873D001F211A640087935E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9873CFE1F211A640087935E /* Main.storyboard */; };
 		F9873D021F211A640087935E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9873D011F211A640087935E /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		F917D5211F290242002FDA6F /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		F917D5231F290629002FDA6F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F917D5251F291B4B002FDA6F /* ChatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		F917D52B1F293F81002FDA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chat.storyboard; sourceTree = "<group>"; };
+		F917D52F1F294AC6002FDA6F /* ChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		F917D5311F2A2812002FDA6F /* ChatListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
 		F9873CF71F211A640087935E /* giphyFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphyFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9873CFA1F211A640087935E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9873CFF1F211A640087935E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 				F9873D5F1F2660160087935E /* SavedGifViewController.swift */,
 				F917D51B1F283F7F002FDA6F /* FindFriendsViewController.swift */,
 				F917D51F1F2844C0002FDA6F /* FindFriendsCell.swift */,
+				F917D52F1F294AC6002FDA6F /* ChatListViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				F9873CFE1F211A640087935E /* Main.storyboard */,
+				F917D52A1F293F81002FDA6F /* Chat.storyboard */,
 				F9873D031F211A640087935E /* LaunchScreen.storyboard */,
 				F9873D141F2121010087935E /* Login.storyboard */,
 			);
@@ -235,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				F9873D6C1F279BA10087935E /* PostImageCell.swift */,
+				F917D5311F2A2812002FDA6F /* ChatListCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -340,6 +349,7 @@
 				F9873D321F2285350087935E /* Simongame.gif in Resources */,
 				F9873D7E1F2829570087935E /* OpenSans-Italic.ttf in Resources */,
 				F9873D7D1F2829570087935E /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				F917D52C1F293F81002FDA6F /* Chat.storyboard in Resources */,
 				F9873D7C1F2829570087935E /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +412,7 @@
 				F917D51A1F283CB8002FDA6F /* FollowService.swift in Sources */,
 				F9873D191F2121CC0087935E /* UserService.swift in Sources */,
 				F917D5221F290242002FDA6F /* Chat.swift in Sources */,
+				F917D5321F2A2812002FDA6F /* ChatListCell.swift in Sources */,
 				F917D5241F290629002FDA6F /* Message.swift in Sources */,
 				F9873D0F1F211D980087935E /* LoginViewController.swift in Sources */,
 				F9873D341F23909A0087935E /* GifService.swift in Sources */,
@@ -413,6 +424,7 @@
 				F9873D2C1F2131210087935E /* ViewController.swift in Sources */,
 				F9873D171F21219B0087935E /* User.swift in Sources */,
 				F9873D601F2660160087935E /* SavedGifViewController.swift in Sources */,
+				F917D5301F294AC6002FDA6F /* ChatListViewController.swift in Sources */,
 				F9873CFB1F211A640087935E /* AppDelegate.swift in Sources */,
 				F917D5201F2844C0002FDA6F /* FindFriendsCell.swift in Sources */,
 				F9873D1F1F2127000087935E /* Storyboard+Utility.swift in Sources */,
@@ -424,6 +436,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F917D52A1F293F81002FDA6F /* Chat.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F917D52B1F293F81002FDA6F /* Base */,
+			);
+			name = Chat.storyboard;
+			sourceTree = "<group>";
+		};
 		F9873CFE1F211A640087935E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

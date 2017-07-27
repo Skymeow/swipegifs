@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiz-8G-NXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1004" y="-733.5832083958021"/>
+            <point key="canvasLocation" x="-1452" y="-1358"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -100,15 +100,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO3-Da-ug1">
-                                <rect key="frame" x="287" y="28" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="savedGif"/>
-                                <connections>
-                                    <action selector="savedGifButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RqW-92-emK"/>
-                                    <segue destination="9qT-bf-4zf" kind="show" id="zpm-m9-ElC"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zcz-Jt-9yP" customClass="gifImage">
                                 <rect key="frame" x="67" y="107" width="240" height="453"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -121,6 +112,28 @@
                                     <segue destination="2O2-9M-0vV" kind="show" id="NAl-qs-Ei9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO3-Da-ug1">
+                                <rect key="frame" x="290" y="56" width="46" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="savedGif"/>
+                                <connections>
+                                    <action selector="savedGifButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RqW-92-emK"/>
+                                    <segue destination="9qT-bf-4zf" kind="show" id="zpm-m9-ElC"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzy-AV-bRm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="GiphyFun" id="IdS-bg-UQi">
+                                        <barButtonItem key="leftBarButtonItem" image="Image" id="dbH-qA-Qbb">
+                                            <connections>
+                                                <segue destination="0N5-OS-o7y" kind="presentation" id="sgL-gw-41b"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -131,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+            <point key="canvasLocation" x="-71" y="-762"/>
         </scene>
         <!--Saved Gif View Controller-->
         <scene sceneID="gIH-jU-2oQ">
@@ -173,7 +186,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9X-Vk-9ZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.60000000000002" y="37.331334332833585"/>
+            <point key="canvasLocation" x="2263" y="38"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="28i-o0-eCF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="0N5-OS-o7y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dx-sq-Lg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="-762"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="24" height="24"/>
+    </resources>
 </document>
