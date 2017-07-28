@@ -19,6 +19,9 @@
 		F917D52C1F293F81002FDA6F /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F917D52A1F293F81002FDA6F /* Chat.storyboard */; };
 		F917D5301F294AC6002FDA6F /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D52F1F294AC6002FDA6F /* ChatListViewController.swift */; };
 		F917D5321F2A2812002FDA6F /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5311F2A2812002FDA6F /* ChatListCell.swift */; };
+		F917D5361F2A3B8C002FDA6F /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5351F2A3B8C002FDA6F /* NewChatViewController.swift */; };
+		F917D5391F2A3EA7002FDA6F /* NewChatUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D5381F2A3EA7002FDA6F /* NewChatUserCell.swift */; };
+		F917D53B1F2A542D002FDA6F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917D53A1F2A542D002FDA6F /* ChatViewController.swift */; };
 		F9873CFB1F211A640087935E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9873CFA1F211A640087935E /* AppDelegate.swift */; };
 		F9873D001F211A640087935E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9873CFE1F211A640087935E /* Main.storyboard */; };
 		F9873D021F211A640087935E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9873D011F211A640087935E /* Assets.xcassets */; };
@@ -66,6 +69,9 @@
 		F917D52B1F293F81002FDA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chat.storyboard; sourceTree = "<group>"; };
 		F917D52F1F294AC6002FDA6F /* ChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		F917D5311F2A2812002FDA6F /* ChatListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		F917D5351F2A3B8C002FDA6F /* NewChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
+		F917D5381F2A3EA7002FDA6F /* NewChatUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewChatUserCell.swift; sourceTree = "<group>"; };
+		F917D53A1F2A542D002FDA6F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F9873CF71F211A640087935E /* giphyFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphyFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9873CFA1F211A640087935E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9873CFF1F211A640087935E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,6 +184,8 @@
 				F917D51B1F283F7F002FDA6F /* FindFriendsViewController.swift */,
 				F917D51F1F2844C0002FDA6F /* FindFriendsCell.swift */,
 				F917D52F1F294AC6002FDA6F /* ChatListViewController.swift */,
+				F917D5351F2A3B8C002FDA6F /* NewChatViewController.swift */,
+				F917D53A1F2A542D002FDA6F /* ChatViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			children = (
 				F9873D6C1F279BA10087935E /* PostImageCell.swift */,
 				F917D5311F2A2812002FDA6F /* ChatListCell.swift */,
+				F917D5381F2A3EA7002FDA6F /* NewChatUserCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -415,11 +424,14 @@
 				F917D5321F2A2812002FDA6F /* ChatListCell.swift in Sources */,
 				F917D5241F290629002FDA6F /* Message.swift in Sources */,
 				F9873D0F1F211D980087935E /* LoginViewController.swift in Sources */,
+				F917D5391F2A3EA7002FDA6F /* NewChatUserCell.swift in Sources */,
 				F9873D341F23909A0087935E /* GifService.swift in Sources */,
 				F917D5261F291B4B002FDA6F /* ChatService.swift in Sources */,
 				F9873D6D1F279BA10087935E /* PostImageCell.swift in Sources */,
+				F917D53B1F2A542D002FDA6F /* ChatViewController.swift in Sources */,
 				F917D51C1F283F7F002FDA6F /* FindFriendsViewController.swift in Sources */,
 				F9873D271F2128D90087935E /* DatabaseReference+Location.swift in Sources */,
+				F917D5361F2A3B8C002FDA6F /* NewChatViewController.swift in Sources */,
 				F9873D361F2390AA0087935E /* Gif.swift in Sources */,
 				F9873D2C1F2131210087935E /* ViewController.swift in Sources */,
 				F9873D171F21219B0087935E /* User.swift in Sources */,

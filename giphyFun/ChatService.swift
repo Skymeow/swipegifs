@@ -114,7 +114,6 @@ struct ChatService {
     static func observeMessages(forChatKey chatKey: String, completion: @escaping (DatabaseReference, Message?) -> Void) -> DatabaseHandle {
         let messagesRef = Database.database().reference().child("messages").child(chatKey)
         
-        //DataEventType will execute the callback once for each childat the ref and for any additional child aded
         return messagesRef.observe(.childAdded, with: { snapshot in
             guard let message = Message(snapshot: snapshot) else {
                 return completion(messagesRef, nil)
@@ -123,5 +122,4 @@ struct ChatService {
             completion(messagesRef, message)
         })
     }
-
 }

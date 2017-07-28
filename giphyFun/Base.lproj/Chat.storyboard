@@ -62,6 +62,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="UXs-nJ-WlB" id="Ssd-xz-faU"/>
+                                    <outlet property="delegate" destination="UXs-nJ-WlB" id="qa7-cH-ZYM"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -79,15 +80,110 @@
                                 <action selector="dismissButtonTapped:" destination="UXs-nJ-WlB" id="5ng-qz-iTm"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="zJC-AC-rME"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="zJC-AC-rME">
+                            <connections>
+                                <segue destination="kyf-x8-8lM" kind="show" identifier="" id="y3C-uu-zIY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="cP9-6u-iRu" id="kTV-3E-ZkH"/>
+                        <segue destination="8Bz-vx-bHu" kind="show" identifier="toChat" id="3K6-7d-FUB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lpl-E5-SW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1357.5999999999999" y="-767.76611694152928"/>
+            <point key="canvasLocation" x="1230" y="-877"/>
+        </scene>
+        <!--New Message-->
+        <scene sceneID="cZm-EX-RmX">
+            <objects>
+                <viewController id="kyf-x8-8lM" customClass="NewChatViewController" customModule="giphyFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kys-X1-zPn"/>
+                        <viewControllerLayoutGuide type="bottom" id="4fV-Hi-OvK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ran-w7-MN6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y9S-TB-7Vd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="NewChatUserCell" textLabel="fBh-uh-az9" style="IBUITableViewCellStyleDefault" id="PmY-PW-Fcx" customClass="NewChatUserCell" customModule="giphyFun" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PmY-PW-Fcx" id="yKC-bu-BEg">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fBh-uh-az9">
+                                                    <rect key="frame" x="15" y="0.0" width="321" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kyf-x8-8lM" id="6TO-lZ-kYp"/>
+                                    <outlet property="delegate" destination="kyf-x8-8lM" id="4uG-dC-piE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y9S-TB-7Vd" secondAttribute="trailing" id="UlJ-Tf-UJy"/>
+                            <constraint firstItem="y9S-TB-7Vd" firstAttribute="leading" secondItem="ran-w7-MN6" secondAttribute="leading" id="h26-qd-AVZ"/>
+                            <constraint firstItem="4fV-Hi-OvK" firstAttribute="top" secondItem="y9S-TB-7Vd" secondAttribute="bottom" id="hkl-Re-FsQ"/>
+                            <constraint firstItem="y9S-TB-7Vd" firstAttribute="top" secondItem="ran-w7-MN6" secondAttribute="top" id="zVU-cD-A14"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Message" id="ECR-EE-egC">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="ogd-1S-CdI">
+                            <connections>
+                                <action selector="nextButtonTapped:" destination="kyf-x8-8lM" id="5pV-Ea-fFr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nextButton" destination="ogd-1S-CdI" id="l8G-EE-Tak"/>
+                        <outlet property="tableView" destination="y9S-TB-7Vd" id="hn3-4U-WUI"/>
+                        <segue destination="8Bz-vx-bHu" kind="show" identifier="toChat" id="Nsh-h7-Kb3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpX-XW-Cyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2204" y="-796"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="pn2-Am-nsg">
+            <objects>
+                <viewController title="Chat" id="8Bz-vx-bHu" customClass="ChatViewController" customModule="giphyFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ea-0J-1ab"/>
+                        <viewControllerLayoutGuide type="bottom" id="VCm-6j-4Tg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b64-Vh-bbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Kjf-gr-dpC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="zdL-4C-q6M">
+                            <connections>
+                                <action selector="dismissButtonTapped:" destination="8Bz-vx-bHu" id="4v3-vE-tP4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7w-BV-YqZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465" y="-37"/>
         </scene>
         <!--Title-->
         <scene sceneID="WL6-h7-foz">
@@ -105,7 +201,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2UF-Mb-o30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628" y="-762"/>
+            <point key="canvasLocation" x="292" y="-795"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3K6-7d-FUB"/>
+    </inferredMetricsTieBreakers>
 </document>

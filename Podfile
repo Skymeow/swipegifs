@@ -30,6 +30,8 @@ target 'giphyFun' do
   pod 'GoogleSignIn'
   pod 'FirebaseUI/Google'
   
+  pod 'JSQMessagesViewController'
+  
   pod 'FoldingCell', '~> 2.0.3' 
   pod "EasyPeasy"
   

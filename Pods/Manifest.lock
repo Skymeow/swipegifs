@@ -84,6 +84,9 @@ PODS:
   - GTMSessionFetcher/Core (1.1.10)
   - GTMSessionFetcher/Full (1.1.10):
     - GTMSessionFetcher/Core (= 1.1.10)
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - Kingfisher (3.10.3)
   - SwiftGifOrigin (1.6.1)
   - SwiftyJSON (2.3.2)
@@ -104,6 +107,7 @@ DEPENDENCIES:
   - FirebaseUI/Google
   - FoldingCell (~> 2.0.3)
   - GoogleSignIn
+  - JSQMessagesViewController
   - Kingfisher (~> 3.0)
   - SwiftGifOrigin
   - SwiftyJSON (from `https://github.com/IBM-Swift/SwiftyJSON.git`)
@@ -150,10 +154,12 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 7ebd3d2457723ddd1e44bdb503e6662352740e1a
+PODFILE CHECKSUM: 9a2acc0a68c76eab1fa0ca12a7b59dfffd0d29d5
 
 COCOAPODS: 1.2.1

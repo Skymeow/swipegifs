@@ -19,6 +19,7 @@ class ChatListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
 // VC Lifecycle
+    // caz it's root view controller of the UINavigationController
     @IBAction func dismissButtonTapped(_ sender: UIBarButtonItem) {
         navigationController?.dismiss(animated: true)
     }

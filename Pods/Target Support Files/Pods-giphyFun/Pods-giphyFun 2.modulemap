@@ -1,6 +1,0 @@
-framework module Pods_giphyFun {
-  umbrella header "Pods-giphyFun-umbrella.h"
-
-  export *
-  module * { export * }
-}
